@@ -11,13 +11,12 @@ class PrincipalController extends Controller
     }
 
     public function contato(){
-        return view('site.contact');
-        // echo "Contato = 4002-8922";
+        var_dump($_POST);
+        return view('site.contact', ['titulo' => 'Contato (teste)']);
     }
 
     public function sobre(){
         return view('site.about');
-        // echo "Coisas sobre nozes";
     }
 
 }
